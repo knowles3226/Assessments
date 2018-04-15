@@ -7,18 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		11797E36207D4532006672BB /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 11797E34207D4532006672BB /* DataModel.xcdatamodeld */; };
+		1129003F2082B2DD006277D5 /* ToDoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117DF877206D266D009791A4 /* ToDoListViewController.swift */; };
+		11290041208331A2006277D5 /* ChildsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11290040208331A2006277D5 /* ChildsViewController.swift */; };
 		11797E592082497D006672BB /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11797E582082497D006672BB /* CategoryViewController.swift */; };
+		11797E5B20825E84006672BB /* customCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11797E5A20825E84006672BB /* customCell.swift */; };
 		117DF876206D266D009791A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117DF875206D266D009791A4 /* AppDelegate.swift */; };
-		117DF878206D266D009791A4 /* ToDoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117DF877206D266D009791A4 /* ToDoListViewController.swift */; };
 		117DF87B206D266D009791A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 117DF879206D266D009791A4 /* Main.storyboard */; };
 		117DF87D206D266D009791A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 117DF87C206D266D009791A4 /* Assets.xcassets */; };
 		117DF880206D266D009791A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 117DF87E206D266D009791A4 /* LaunchScreen.storyboard */; };
+		11D20DF02082ADBC00BB324D /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 11797E34207D4532006672BB /* DataModel.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		11290040208331A2006277D5 /* ChildsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildsViewController.swift; sourceTree = "<group>"; };
 		11797E35207D4532006672BB /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 		11797E582082497D006672BB /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		11797E5A20825E84006672BB /* customCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customCell.swift; sourceTree = "<group>"; };
 		117DF872206D266D009791A4 /* Assessments.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assessments.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		117DF875206D266D009791A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		117DF877206D266D009791A4 /* ToDoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListViewController.swift; sourceTree = "<group>"; };
@@ -80,7 +84,9 @@
 			isa = PBXGroup;
 			children = (
 				11797E582082497D006672BB /* CategoryViewController.swift */,
+				11290040208331A2006277D5 /* ChildsViewController.swift */,
 				117DF877206D266D009791A4 /* ToDoListViewController.swift */,
+				11797E5A20825E84006672BB /* customCell.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -129,7 +135,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "matthew knowles";
 				TargetAttributes = {
 					117DF871206D266D009791A4 = {
@@ -175,8 +181,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				11797E592082497D006672BB /* CategoryViewController.swift in Sources */,
-				117DF878206D266D009791A4 /* ToDoListViewController.swift in Sources */,
-				11797E36207D4532006672BB /* DataModel.xcdatamodeld in Sources */,
+				11797E5B20825E84006672BB /* customCell.swift in Sources */,
+				11D20DF02082ADBC00BB324D /* DataModel.xcdatamodeld in Sources */,
+				11290041208331A2006277D5 /* ChildsViewController.swift in Sources */,
+				1129003F2082B2DD006277D5 /* ToDoListViewController.swift in Sources */,
 				117DF876206D266D009791A4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -217,6 +225,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -224,6 +233,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -274,6 +284,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -281,6 +292,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -317,6 +329,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MV4SJY2N5Z;
 				INFOPLIST_FILE = Assessments/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.msk-apps.Assessments";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -332,6 +345,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MV4SJY2N5Z;
 				INFOPLIST_FILE = Assessments/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.msk-apps.Assessments";
 				PRODUCT_NAME = "$(TARGET_NAME)";
